@@ -71,3 +71,48 @@ document.addEventListener('DOMContentLoaded',() => {
 
       })
   })
+
+  document.addEventListener('DOMContentLoaded',() => {
+    const dataset = $('#post-show').data()
+    const postId = dataset.postId
+
+    axios.get(`/posts/${postId}/comments`)
+      .then((response) => {
+        const comments = response.data
+        comments.forEach((comment) => {
+          $('.comments-container').append(
+            `<div class="comment-card">
+              <div class="comment-user-info">
+                <div class="comment-username"><p>${comment.user.username}</p></div>
+                <div class="comment-content"><p>${comment.content}</p></div>
+              </div>
+            </div>`
+          )
+        })
+      })
+
+
+      $('.add-comment-btn').on('click', () => {
+        const content = $('#comment_content').val()
+        if (!content) {
+          window.alert('コメントを入力してください')
+        } else {
+          axios.post(`/posts/${postId}/comments`, {
+            comment: {content: content}
+          })
+            .then((res) => {
+              const comment = res.data
+              $('.comments-container').append(
+                `<div class="comment-card">               
+                  <div class="comment-user-info">
+                    <div class="comment-username"><p>${comment.user.username}</p></div>
+                    <div class="comment-content"><p>${comment.content}</p></div>
+                   </div>
+                </div>`
+              )
+              $('#comment_content').val('')
+            })
+          }
+        })
+
+  })
