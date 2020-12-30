@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded',() => {
               $('.comments-container').append(
                 `<div class="comment-card">               
                   <div class="comment-user-info">
-                    <div class="comment-username"><p>${comment.user.username}</p></div>
+                    <div class="comment-username"><p>${comment.username}</p></div>
                     <div class="comment-content"><p>${comment.content}</p></div>
                    </div>
                 </div>`
