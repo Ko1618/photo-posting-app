@@ -121,5 +121,35 @@
   color: #BDBDBD;
   font-family: Poppins;
   font-size : 16px;
-  
+}
+
+////コメント////
+.comment_title {
+  font-size: 16px;
+  font-weight : bold;
+  text-align : center;
+  margin-top : 20px;
+  margin-bottom : 30px;
+}
+
+.comment-card {
+  margin-bottom : 30px;
+
+
+}
+.comment-user-info{
+
+
+}
+.comment-username {
+  font-size : 16px;
+  text-align: justify;
+  color: #414040;
+
+}
+.comment-content {
+  font-size: 14px;
+  color: #9B9B9B;
+  margin-top : -10px;
+
 }
