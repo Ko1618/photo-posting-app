@@ -23,4 +23,8 @@ Rails.application.routes.draw do
     resource :like, only: [:show, :create, :destroy]
     resources :comments, only: [:index, :create, :destroy]
   end
+
+  resource :timeline, only: [:show]
+  resource :timelinelike, only: [:show]
+
 end
