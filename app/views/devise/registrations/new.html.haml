@@ -1,0 +1,23 @@
+.top_image 
+  = image_tag '背景.png', class: 'top_image'
+.container
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .field
+      = f.label :username, class: 'form_text'
+      %br/
+      = f.text_field :username, class: 'form'
+    .field
+      = f.label :email, class: 'form_text'
+      %br/
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form'
+    .field
+      = f.label :password, class: 'form_text'
+      = f.password_field :password, autocomplete: "new-password", class: 'form'
+    .field
+      = f.label :password_confirmation, class: 'form_text'
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "new-password", class: 'form'
+    .actions
+      = f.submit "CREATE ACCOUNT", class: 'submit_btn'
+  = render "devise/shared/links"
