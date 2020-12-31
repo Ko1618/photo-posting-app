@@ -1,0 +1,11 @@
+.container
+  .follow-header
+    .back_icon
+      = link_to image_tag('矢印.png'), :back
+    %p.follow_title Followers
+  - @followers.each do |follower|
+    .follow_list
+      = image_tag follower.avatar_image, class: 'follow_usericon'
+      .follow_name
+        %p= follower.username
+      .last_login
