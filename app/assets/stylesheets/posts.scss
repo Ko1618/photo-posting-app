@@ -131,12 +131,17 @@
 }
 
 ////コメント////
+
+.comment_header {
+  margin-top :20px;
+  margin-bottom :20px;
+}
 .comment_title {
   font-size: 16px;
   font-weight : bold;
-  text-align : center;
-  margin-top : 20px;
-  margin-bottom : 30px;
+  position: relative;
+  left : 110px;
+  top : -2px;
 }
 
 .comment-card {
