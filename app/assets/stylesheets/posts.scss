@@ -1,0 +1,171 @@
+.post {
+  margin-bottom : 20px;
+}
+
+
+.camera_icon img{
+  margin-top : 15px;
+  width : 25px;
+  margin-left : 5px;
+}
+.post_container {
+  margin-top: 30px;
+}
+
+.usericon {
+  width : 30px;
+  height : 30px;
+  border-radius: 100%;
+  float : left;
+}
+
+.post_user {
+  position: relative;
+  left: 8px;
+  top: 2px;
+  font-size: 14px;
+}
+
+.post_time {
+  position: relative;
+  left: 8px;
+  margin-bottom : 7px;
+  color: #9E9E9E;
+  font-size: 12px;
+
+}
+
+///いいねなどのアイコン関連///
+
+.icon_container {
+  display: flex;
+  margin-top : 5px;
+  margin-bottom : 9px;
+
+}
+
+.like {
+  width: 16px;
+  margin-right :5px;
+}
+
+.icon_button {
+  width: 16px;
+  margin-left: 10px;
+}
+
+///new-post///
+
+.post_username {
+  position: relative;
+  top : 3px;
+  left: 10px;
+  font-style: normal;
+  font-size: 16px;
+
+}
+
+.post_content_form {
+  width: 100%;
+  border: none;
+  font-style: normal;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  margin-top :20px;
+}
+
+.images_input_btn{
+  display: block;
+  width: 73px;
+  height: 30px;
+  margin-top: 5px;
+  padding-top: 2px;
+  color: white;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.images_form_name {
+  color: #4F4F4F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  margin: auto 0;
+  padding-bottom: 15px;
+}
+
+.images_form{
+  display: none;
+}
+
+.post_new_header {
+  margin-top : 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom : 20px;
+
+  }
+
+.cance_button {
+  text-decoration : none;
+  color: #2F80ED;
+}
+
+.status_button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight : bold;
+  font-size: 16px;
+  }
+
+.post_new_button {
+  border: none;  /* 枠線を消す */
+  outline: none; /* クリックしたときに表示される枠線を消す */
+  background: transparent; /* 背景の灰色を消す */
+  color: #BDBDBD;
+  font-family: Poppins;
+  font-size : 16px;
+}
+
+////コメント////
+
+.comment_header {
+  margin-top :20px;
+  margin-bottom :20px;
+}
+.comment_title {
+  font-size: 16px;
+  font-weight : bold;
+  position: relative;
+  left : 110px;
+  top : -2px;
+}
+
+.comment-card {
+  margin-bottom : 30px;
+
+
+}
+.comment-user-info{
+
+
+}
+.comment-username {
+  font-size : 16px;
+  text-align: justify;
+  color: #414040;
+
+}
+.comment-content {
+  font-size: 14px;
+  color: #9B9B9B;
+  margin-top : -10px;
+
+}
+
+.comment-set {
+  margin-bottom: 15px;
+}

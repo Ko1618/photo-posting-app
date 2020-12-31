@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded',() => {
   })
 
  document.addEventListener('DOMContentLoaded',() => {
-  $('.usericon').on('click', () => {
+  $('.profile_usericon').on('click', () => {
     if ($('.avatar_edit_form').hasClass('hidden')){
       $('.avatar_edit_form').removeClass('hidden')
     } else {
