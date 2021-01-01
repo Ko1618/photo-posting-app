@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  
+  validates :images, presence: true
   validates :content, presence: true
 
   has_many_attached :images
