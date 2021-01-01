@@ -1,0 +1,42 @@
+.post_container
+  - @posts.each do |post|
+    .post#post-index{data:{post_id: post.id}}
+      .avatar
+        - if user_signed_in?
+          - if post.user_id == current_user.id
+            = link_to profile_path do
+              = image_tag post.user.avatar_image, class: 'usericon'
+          - else
+            = link_to account_path(post.user) do
+              = image_tag post.user.avatar_image, class: 'usericon'
+        - else
+          = link_to account_path(post.user) do
+            = image_tag post.user.avatar_image, class: 'usericon'
+
+      .post_user
+        = post.user.username
+      .post_time
+        %time(datetime="#{post.created_at}")= time_ago_in_words(post.created_at)
+      = render '/commons/images', post: post
+
+      .icon_container
+        .like 
+          - if user_signed_in?
+            - if current_user.hasliked?(post)
+              .article_heart.active-heart{class: "#{post.id}" , id: "#{post.id}"}
+                = image_tag 'いいね赤.png'
+              .article_heart.hidden.inactive-heart{class: "#{post.id}", id: "#{post.id}"}
+                = image_tag 'いいね.png'
+            - else
+              .article_heart.inactive-heart{class: "#{post.id}" , id: "#{post.id}"}
+                = image_tag 'いいね.png'
+              .article_heart.hidden.active-heart{class: "#{post.id}" , id: "#{post.id}"}
+                = image_tag 'いいね赤.png'
+        .comment
+          = link_to image_tag('コメント.png'), post_path(post.id), data: {"turbolinks" => false}, class: 'icon_button'
+        .share
+          = link_to image_tag('シェア.png'), "https://twitter.com/share?url=#{request.url}",title: 'Twitter', target: '_blank', class: 'icon_button '
+      
+      .post_content
+        = post.content  
+       
