@@ -27,6 +27,8 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'active_model_serializers'
 gem 'sidekiq'
+gem 'aws-sdk-s3', require: false
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -40,6 +42,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'faker'
   gem 'factory_bot_rails'
+  gem 'dotenv-rails'
 end
 
 group :development do

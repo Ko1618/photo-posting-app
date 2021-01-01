@@ -32,7 +32,10 @@
   margin-bottom : 7px;
   color: #9E9E9E;
   font-size: 12px;
+}
 
+.post_content {
+  font-size :12px;
 }
 
 ///いいねなどのアイコン関連///
@@ -136,12 +139,19 @@
   margin-top :20px;
   margin-bottom :20px;
 }
+
+.comment_back_icon img{
+  
+  width : 20px;
+}
+
 .comment_title {
   font-size: 16px;
   font-weight : bold;
-  position: relative;
-  left : 110px;
-  top : -2px;
+  text-align : center;
+  position : relative;
+  top : -41px;
+  pointer-events : none;
 }
 
 .comment-card {
