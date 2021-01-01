@@ -10,6 +10,34 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+ 
  */
+@import 'profile';
+@import 'posts';
+@import 'images';
+@import 'follow';
+@import 'login';
+
+p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+}
+.hidden {
+  display: none;
+}
+.notice_message {
+  padding-top :2px;
+  padding-bottom : 2px;
+  margin-top : 2px;
+}
+.flash_message {
+  font-size : 13px;
+  color: #979797;
+  margin-top : 5px;
+  margin-left : 5px;
+}
+
+
+
+@import 'bootstrap';
