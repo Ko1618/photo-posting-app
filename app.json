@@ -1,9 +1,9 @@
 {
-  "name": "blog app",
-  "description": "This is blogapp",
+  "name": "photo-posting-app",
+  "description": "This is photo-posting-app",
   "keywords": [],
   "website": "",
-  "repository": "https://github.com/cohki0305/blogapp",
+  "repository": "https://github.com/takumi555/photo-posting-app",
   "env": {},
   "addons": [
     "heroku-postgresql:hobby-dev"
