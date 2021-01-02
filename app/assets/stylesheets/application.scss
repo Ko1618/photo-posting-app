@@ -18,11 +18,21 @@
 @import 'follow';
 @import 'login';
 
-p {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .hidden {
   display: none;
 }
@@ -38,6 +48,9 @@ p {
   margin-left : 5px;
 }
 
+.link_login {
+  margin-bottom : 5px;
+}
 
 
 @import 'bootstrap';

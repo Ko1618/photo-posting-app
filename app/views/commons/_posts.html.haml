@@ -24,19 +24,19 @@
           - if user_signed_in?
             - if current_user.hasliked?(post)
               .article_heart.active-heart{class: "#{post.id}" , id: "#{post.id}"}
-                = image_tag 'いいね赤.png'
+                = image_tag 'ハート赤.png'
               .article_heart.hidden.inactive-heart{class: "#{post.id}", id: "#{post.id}"}
-                = image_tag 'いいね.png'
+                = image_tag 'ハート.png'
             - else
               .article_heart.inactive-heart{class: "#{post.id}" , id: "#{post.id}"}
-                = image_tag 'いいね.png'
+                = image_tag 'ハート.png'
               .article_heart.hidden.active-heart{class: "#{post.id}" , id: "#{post.id}"}
-                = image_tag 'いいね赤.png'
+                = image_tag 'ハート赤.png'
         .comment
           = link_to image_tag('コメント.png'), post_path(post.id), data: {"turbolinks" => false}, class: 'icon_button'
         .share
-          = link_to image_tag('シェア.png'), "https://twitter.com/share?url=#{request.url}",title: 'Twitter', target: '_blank', class: 'icon_button '
+          = link_to image_tag('共有.png'), "https://twitter.com/share?url=#{request.url}",title: 'Twitter', target: '_blank', class: 'icon_button '
       
       .post_content
-        = post.content  
+        = post.content 
        

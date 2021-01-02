@@ -11,7 +11,9 @@
 .follow_title {
   text-align : center;
   position : relative;
+  font-weight : bold;
   top : -60px;
+  pointer-events : none;
 } 
 
 
@@ -23,6 +25,7 @@
 
 .follow_usericon {
   width : 40px;
+  border-radius: 100%;
   float : left ;
 }
 

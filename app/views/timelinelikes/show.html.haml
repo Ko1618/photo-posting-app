@@ -10,9 +10,9 @@
   %br
 
   - if user_signed_in?
-    = link_to 'ログアウト', destroy_user_session_path, class: 'devise_link'
+    = link_to 'ログアウト', destroy_user_session_path, class: 'devise_link link_login'
   - else 
-    = link_to 'ログイン', new_user_session_path, class: 'devise_link'
+    = link_to 'ログイン', new_user_session_path, class: 'devise_link link_login'
 
 
   
