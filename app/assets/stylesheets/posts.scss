@@ -5,9 +5,10 @@
 .timeline_title {
   text-align: center;
   position: relative;
-  top :-20px;
+  top : -22px;
   font-weight: bold;
   pointer-events : none;
+  font-size : 20px;
 }
 
 
@@ -21,8 +22,8 @@
 }
 
 .usericon {
-  width : 30px;
-  height : 30px;
+  width : 35px;
+  height : 35px;
   border-radius: 100%;
   float : left;
 }
@@ -31,7 +32,7 @@
   position: relative;
   left: 8px;
   top: 2px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .post_content {
-  font-size :12px;
+  font-size :13px;
   font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -53,18 +54,18 @@
 
 .icon_container {
   display: flex;
-  margin-top : 5px;
+  margin-top : 10px;
   margin-bottom : 9px;
 
 }
 
 .article_heart img{
-  width: 16px;
+  width: 23px;
   margin-right :5px;
 }
 
 .icon_button img{
-  width: 16px;
+  width: 23px;
   margin-left: 10px;
 }
 
@@ -75,7 +76,7 @@
   top : 3px;
   left: 10px;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18x;
 
 }
 
@@ -93,7 +94,7 @@
   width: 73px;
   height: 30px;
   margin-top: 5px;
-  padding-top: 2px;
+  padding-top: 1px;
   color: white;
   text-align: center;
   border: 1px solid #E0E0E0;

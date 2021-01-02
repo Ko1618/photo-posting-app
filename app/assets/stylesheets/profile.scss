@@ -22,15 +22,17 @@
 .follow_btn {
   color: #BDBDBD;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 18px;
 }
 
 .account_username {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position : relative;
-  top : -52px;
+  top : -55px;
   text-align : center;
   font-weight : bold;
   pointer-events : none;
+  font-size : 20px;
  }
 
 
@@ -152,7 +154,8 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    text-align : center;
    position :relative;
-   top : -20px;
+   top : -25px;
    font-weight : bold;
    pointer-events : none;
+   font-size : 20px;
  }
