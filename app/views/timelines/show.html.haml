@@ -1,6 +1,8 @@
 .container 
   .camera
     = link_to image_tag('カメラ.png'), new_post_path , class: 'camera_icon'
+  .timeline_title
+    %p TIMELINE
   .timeline_container
   = render 'commons/posts'
 

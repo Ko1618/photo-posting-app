@@ -32,7 +32,7 @@ import { csrfToken } from 'rails-ujs'
 
 axios.defaults.headers.common['X-CSRF-Token'] = csrfToken()
 
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('turbolinks:load', function()  {
  
 
       $('.inactive-heart ').on('click',(e) => {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded',() => {
       })
   })
 
-  document.addEventListener('DOMContentLoaded',() => {
+  document.addEventListener('turbolinks:load', function()  {
     const dataset = $('#post-show').data()
     const postId = dataset.postId
 
@@ -116,7 +116,8 @@ document.addEventListener('DOMContentLoaded',() => {
         })
   })
 
- document.addEventListener('DOMContentLoaded',() => {
+  document.addEventListener('turbolinks:load', function()  {
+ 
   $('.profile_usericon').on('click', () => {
     if ($('.avatar_edit_form').hasClass('hidden')){
       $('.avatar_edit_form').removeClass('hidden')
