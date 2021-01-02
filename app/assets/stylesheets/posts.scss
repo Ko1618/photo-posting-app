@@ -2,10 +2,18 @@
   margin-bottom : 20px;
 }
 
+.timeline_title {
+  text-align: center;
+  position: relative;
+  top :-20px;
+  font-weight: bold;
+  pointer-events : none;
+}
+
 
 .camera_icon img{
   margin-top : 15px;
-  width : 25px;
+  width : 20px;
   margin-left : 5px;
 }
 .post_container {

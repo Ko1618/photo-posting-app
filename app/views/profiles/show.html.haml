@@ -14,9 +14,11 @@
   .avatar_edit_form.hidden
     = form_with(model: @profile, url: profile_path, method: 'put', local: true ) do |f|
       %div
-        = f.file_field :avatar 
+        = f.label :avatar, '画像を選択', class: 'aaa' do
+          %i.images_form_avatar Select your avatar
+          = f.file_field :avatar, class: 'images_form'
       %div
-        = f.submit 'Submit', class: 'btn btn-outline-secondary avatar_submit_btn'
+        = f.submit 'SUBMIT', class: 'avatar_submit_btn'
 
   .account_status
     .post_count
